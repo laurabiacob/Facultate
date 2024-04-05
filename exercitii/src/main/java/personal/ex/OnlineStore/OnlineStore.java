@@ -45,6 +45,11 @@ public class OnlineStore {
     public void addToCart(String username, Product product, int quantity) {
         sessions.get(username).addToCart(product, quantity);
     }
+    public void addProducts() {
+        products.add(new Product("apple", 1.0));
+        products.add(new Product("banana", 0.5));
+        products.add(new Product("orange", 0.8));
+    }
 
     public String checkout(String username) {
         // Implement checkout logic
